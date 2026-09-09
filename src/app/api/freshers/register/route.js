@@ -3,6 +3,7 @@ import FreshersRegistration from "@/app/models/FreshersRegistration";
 
 export async function POST(req) {
   try {
+
     const body = await req.json();
     const {
       teamName,

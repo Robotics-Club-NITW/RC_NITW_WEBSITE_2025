@@ -1,7 +1,8 @@
 import "./globals.css";
 import LayoutShell from "./components/LayoutShell";
 import SessionProvider from "./components/SessionProvider";
-import { Bangers, Nunito } from "next/font/google";
+import PixelCanvas from "./components/PixelCanvas";
+import { Bangers, Rajdhani, Orbitron } from "next/font/google";
 
 const bangers = Bangers({
   weight: "400",
@@ -9,10 +10,16 @@ const bangers = Bangers({
   variable: "--font-bangers",
 });
 
-const nunito = Nunito({
-  weight: ["400", "600", "700", "800"],
+const rajdhani = Rajdhani({
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
-  variable: "--font-nunito",
+  variable: "--font-rajdhani",
+});
+
+const orbitron = Orbitron({
+  weight: ["400", "700", "900"],
+  subsets: ["latin"],
+  variable: "--font-orbitron",
 });
 
 export const metadata = {
@@ -23,7 +30,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${bangers.variable} ${nunito.variable} bg-black`}>
+      <body className={`${bangers.variable} ${rajdhani.variable} ${orbitron.variable} bg-black`}>
+        <PixelCanvas />
         <SessionProvider>
           <LayoutShell>{children}</LayoutShell>
         </SessionProvider>
