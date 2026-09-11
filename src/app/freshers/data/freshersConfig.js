@@ -6,7 +6,7 @@ export const freshersEvent = {
   eventName: "RC NITW FRESHERS 2026",
   eventSubtitle: "Robotics Club NIT Warangal presents the ultimate spaceship adventure!",
   tagline: "EMERGENCY MEETING: JOIN THE CREW OR BE LEFT IN THE VENT",
-  eventDate: "TBD — EVENT DATE",
+  eventDate: "27th September",
   eventTime: "TBD — EVENT TIME",
   venue: "TBD — VENUE",
   registrationDeadline: "TBD — REGISTRATION DEADLINE",
